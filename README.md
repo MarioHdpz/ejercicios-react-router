@@ -5,7 +5,7 @@ ___
 
 Ahora tienes dos componentes, uno que muestra "Hello world" y otro que muestra "Bye bye world"
 
-Debes implementar el React Router para que cumpla las siguientes condiciones:
+Debes modificar el React Router para que cumpla las siguientes condiciones:
 
 1. El componente HelloWorld se debe mostrar sólo en la ruta "/hello-world".
 2. El componente ByeByeWorld se debe mostrar sólo en la ruta "/bye-bye-world".
