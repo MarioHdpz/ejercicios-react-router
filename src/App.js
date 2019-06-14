@@ -1,12 +1,17 @@
 import React from 'react';
 import './App.css';
 import HelloWorld from './components/HelloWorld';
+import NotFound from './components/NotFound';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="main">
-      <HelloWorld />
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/hello-world" component={HelloWorld} />
+        <Route component={NotFound} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
