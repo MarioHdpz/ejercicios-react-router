@@ -1,14 +1,19 @@
 # Ejercicios de React Router
 ___
 
-### Ejercicio 1: Hola mundo con Router
+### Ejercicio 2: Hola y adiós mundo con Router
 
-Tienes una aplicación con un componente de React que muestra "Hello world".
+Ahora tienes dos componentes, uno que muestra "Hello world" y otro que muestra "Bye bye world"
 
-Tu tarea es implementar el React Router para que se cumpla la siguiente condición:
+Debes implementar el React Router para que cumpla las siguientes condiciones:
 
-1. El componente Hello World se debe mostrar sólo en la ruta "/hello-world".
+1. El componente HelloWorld se debe mostrar sólo en la ruta "/hello-world".
+2. El componente ByeByeWorld se debe mostrar sólo en la ruta "/bye-bye-world".
+
+Además, debes de poner un link en cada componente que te permita navegar de uno a otro.
 
 **Bonus**
 
-En caso de que la ruta no sea "/hello-world" se debe mostrar un mensaje de "404 - Not Found".
+Haz un componente llamado Navbar y pon ambos links ahí, ese componente debe mostrarse siempre.
+
+Dale estilos para que parezca una barra de navegación.

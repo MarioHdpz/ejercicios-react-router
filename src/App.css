@@ -1,3 +1,15 @@
 .main {
   text-align: center;
 }
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: gray;
+}
+
+nav > a {
+  color: white;
+  text-decoration: none;
+}
