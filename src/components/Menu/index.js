@@ -1,24 +1,29 @@
 import React from 'react';
 import countries from './countries';
-import { Link, withRouter } from 'react-router-dom';
+// import { Link } from 'react-router-dom'; 
 
-const Menu = props => (
+/** 
+ * TIP: Debes implementar el elemento Link y agregarle
+ * su propiedad "to"
+*/
+
+const Menu = () => (
   <div className="menu">
     {
       countries.map(country => {
-        const code = country.code.toLowerCase()
-        const isSamePath = props.location.pathname === `/${code}`;
+        // Esta variable es el código de país listo para usarse
+        const code = country.code.toLowerCase();
 
         return (
-          <Link to={`/${code}`} key={code}>
-            <div className={`menu-item ${isSamePath ? 'active' : ''}`}>
+          <div key={code}>
+            <div className="menu-item">
               {country.name}
             </div>
-          </Link>
+          </div>
         )
       })
     }
   </div>
 );
 
-export default withRouter(Menu);
+export default Menu;
