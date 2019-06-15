@@ -1,14 +1,20 @@
 # Ejercicios de React Router
 ___
 
-### Ejercicio 1: Hola mundo con Router
+### Ejercicio 1: React Flags
 
-Tienes una aplicación con un componente de React que muestra "Hello world".
+El objetivo de la aplicación es que al dar click al menú lateral se muestren las banderas de cada país en el centro.
 
-Tu tarea es implementar el React Router para que se cumpla la siguiente condición:
+Sin embargo, la aplicación está incompleta y en este momento sólo se muestra una bandera, esto se debe a que la url está "harcodeada" en el componente Flag:
 
-1. El componente Hello World se debe mostrar sólo en la ruta "/hello-world".
+`https://www.countryflags.io/mx/flat/64.png`
+
+Lo primero que debes hacer es modificar el componente menú para que al dar click en un elemento se muestre en la URL el código de país, por ejemplo:
+
+`http://localhost/mx`
+
+Además, en el componente de Flag debe de leer la variable que está en la URL (mx) y cambiarla en la url "harcodeada" para que muestre al país seleccionado.
 
 **Bonus**
 
-En caso de que la ruta no sea "/hello-world" se debe mostrar un mensaje de "404 - Not Found".
+Debes resaltar en el menú al elemento que se está mostrando. (TIP: debes usar el HOC withRouter)

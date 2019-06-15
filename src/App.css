@@ -1,3 +1,47 @@
-.main {
-  text-align: center;
+#root {
+  height: 100vh;
+  overflow-y: hidden;
 }
+
+.main {
+  width: 65vw;
+  height: 70vh;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  top: 30vh;
+}
+
+.main img {
+  width: 40vh;
+}
+
+.menu {
+  font-size: 1.2em;
+  height: 100vh;
+  overflow-y: scroll;
+  width: 30vw;
+  display: inline-block;
+}
+
+.menu-item {
+  padding: 10px;
+  border-bottom: 1px solid white;
+  background-color: #303F9F ;
+}
+
+.menu-item.active {
+  font-weight: 600;
+  font-size: 1.3em
+}
+
+.menu-item:hover {
+  background-color: #3F51B5 ;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
