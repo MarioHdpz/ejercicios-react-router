@@ -1,7 +1,7 @@
 # Ejercicios de React Router
 ___
 
-### Ejercicio 1: React Flags
+### Ejercicio 3: React Flags
 
 El objetivo de la aplicación es que al dar click al menú lateral se muestren las banderas de cada país en el centro.
 
